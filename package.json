@@ -1,0 +1,65 @@
+{
+  "name": "nikeautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "initializer": "node helpers/initializer.js",
+
+    "test-qa1": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/**/*.js'",
+    "test-qa2": "ENV_VAR=https://api-qa2.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/**/*.js'",
+    
+    "test-qa1-v1-current-audiences": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/audiences/**/*.js'",
+    "test-qa1-v1-current-caches": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/caches/**/*.js'",
+    "test-qa1-v1-current-consents": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/consents/**/*.js'",
+    "test-qa1-v1-current-deeplinks": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/deepLinks/**/*.js'",
+    "test-qa1-v1-current-initiativeconsents": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/initiativeConsents/**/*.js'",
+    "test-qa1-v1-current-initiatives": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/initiatives/**/*.js'",
+    "test-qa1-v1-current-inquiries": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/inquiries/**/*.js'",
+    "test-qa1-v1-current-inquiryanswers": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/inquiryAnswers/**/*.js'",
+    "test-qa1-v1-current-inquiryparticipations": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/inquiryParticipations/**/*.js'",
+    "test-qa1-v1-current-participations": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/participations/**/*.js'",
+    "test-qa1-v1-current-ppi": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/ppi/**/*.js'",
+    "test-qa1-v1-current-uls": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/uls/**/*.js'",
+    "test-qa1-v1-current-user": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/user/**/*.js'",
+
+    "test-qa1-v1-upmid-audiences": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/audiences/**/*.js'",
+    "test-qa1-v1-upmid-caches": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/caches/**/*.js'",
+    "test-qa1-v1-upmid-consents": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/consents/**/*.js'",
+    "test-qa1-v1-upmid-deeplinks": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/deepLinks/**/*.js'",
+    "test-qa1-v1-upmid-initiativeconsents": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/initiativeConsents/**/*.js'",
+    "test-qa1-v1-upmid-initiatives": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/initiatives/**/*.js'",
+    "test-qa1-v1-upmid-inquiries": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/inquiries/**/*.js'",
+    "test-qa1-v1-upmid-inquiryanswers": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/inquiryAnswers/**/*.js'",
+    "test-qa1-v1-upmid-inquiryparticipations": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/inquiryParticipations/**/*.js'",
+    "test-qa1-v1-upmid-participations": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/participations/**/*.js'",
+    "test-qa1-v1-upmid-ppi": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/ppi/**/*.js'",
+    "test-qa1-v1-upmid-uls": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/uls/**/*.js'",
+    "test-qa1-v1-upmid-user": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/user/**/*.js'",
+    "test-qa1-v1-upmid-userTasks": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/upmId/userTasks/**/*.js'",
+
+
+    "test-qa1-v2-current-ppi": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v2/users/current/ppi/**/*.js'",
+    "test-qa1-v2-current-inquiryanswers": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v2/users/current/inquiryanswers/**/*.js'",
+    "test-qa1-v2-current-participations": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v2/users/current/participations/**/*.js'",
+
+    "test-qa1-v2-upmid-ppi": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v2/users/upmId/ppi/**/*.js'",
+    "test-qa1-v2-upmid-inquiryanswers": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v2/users/upmId/inquiryanswers/**/*.js'",
+    "test-qa1-v2-upmid-participations": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v2/users/current/participations/**/*.js'",
+
+
+    "test-qa1-v3-current-ppi": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/ppi/**/*.js'",
+    "test-qa1-v3-upmid-ppi": "ENV_VAR=https://api-qa1.l2w-test.nikecloud.com mocha --reporter nyan 'user_api/v1/users/current/ppi/**/*.js'"
+    
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.1.0",
+    "axios": "^1.6.8",
+    "mocha": "^10.7.3",
+    "puppeteer": "^23.0.2"
+  }
+}
